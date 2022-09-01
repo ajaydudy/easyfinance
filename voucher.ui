@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Voucher</class>
+ <widget class="QDialog" name="Voucher">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>808</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add NewVoucher</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Add Details</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Voucher No.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditID">
+        <property name="styleSheet">
+         <string>background-color: rgb(226, 226, 226);
+color: rgb(236, 0, 0);</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Loan No.    </string>
+        </property>
+        <property name="buddy">
+         <cstring>cboLoan</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QComboBox" name="cboLoan"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Description.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Date</string>
+        </property>
+        <property name="buddy">
+         <cstring>dateEdit</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Customer</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Debit / Credit</string>
+        </property>
+        <property name="buddy">
+         <cstring>cboDC</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="displayFormat">
+         <string>dd/MM/yyyy</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Chq No./ Rcpt .No.</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEditNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEditNo"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="QComboBox" name="cboDC">
+        <item>
+         <property name="text">
+          <string>Credit</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Debit</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Amount</string>
+        </property>
+        <property name="buddy">
+         <cstring>lineEditAmount</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="lineEditAmount"/>
+      </item>
+      <item row="0" column="5">
+       <widget class="QComboBox" name="cbodes">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="duplicatesEnabled">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>CASH RECD.</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHEQUE RECD.</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHEQUE BOUNCE CHRG.</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHEQUE BOUNCE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CHEQUE GIVEN</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CASH GIVEN</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>DEALER PAYMENT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>REPOSSESSION CHARGES</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PENALTY</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>PENALTY RECD.</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="3" rowspan="2">
+       <widget class="QPlainTextEdit" name="lineEditCust">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>51</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(226, 226, 226);</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButtonAdd">
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>+ Add Voucher </string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>481</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Total Amount</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditTotal">
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: rgb(226, 226, 226);</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>550</width>
+          <height>24</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="maximumSize">
+         <size>
+          <width>77</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>Voucher</receiver>
+   <slot>addVoucher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>244</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cboLoan</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Voucher</receiver>
+   <slot>showDetail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>69</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Voucher</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>700</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>756</x>
+     <y>416</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Voucher</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>623</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>save()</slot>
+  <slot>checkRadio(QAbstractButton*)</slot>
+  <slot>showDetail()</slot>
+  <slot>addVoucher()</slot>
+ </slots>
+</ui>

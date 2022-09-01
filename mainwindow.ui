@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Easy Finance 1.0</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="margin">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frameDetail">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <item row="0" column="0" colspan="9">
+           <widget class="QLabel" name="labelHeader">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0.443, x2:1, y2:0.489, stop:0 rgba(9, 98, 183, 255), stop:1 rgba(123, 183, 242, 255));
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="text">
+             <string>Loan Account ledger</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>3</number>
+            </property>
+            <property name="indent">
+             <number>2</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Loan No</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditLoanNo">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Case Date</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QDateEdit" name="dateEdit">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MMM/yyyy</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>E.M.I.</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QLineEdit" name="lineEditEMI">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QLabel" name="labelRt">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Rate of Penalty</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="QSpinBox" name="spinBox">
+            <property name="maximumSize">
+             <size>
+              <width>48</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="8">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>&amp;View</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Customer Name</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="3">
+           <widget class="QLineEdit" name="lineEditCustName">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QLabel" name="labelAg">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Amount Agreed</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QLineEdit" name="lineEditAmount">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="6">
+           <widget class="QLabel" name="labelPl">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Total Penalty</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="7" colspan="2">
+           <widget class="QLineEdit" name="lineEditPenalty">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView">
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="statusTip">
+          <string>099887</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideRight</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>100</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.21053pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frameFooter">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Pre -Payment Amount</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditPPAmt">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>
+background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Overdue Charges</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLineEdit" name="lineEditOverdue">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Hire Money Receivable</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEditHireRC">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>
+background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="labelAg_2">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Cheque Boucing Charges</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLineEdit" name="lineEditBounce">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string>background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Repossession Charges</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEditPossesion">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="labelPl_2">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Total Premature Amount</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QLineEdit" name="lineEditTotal">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(226, 226, 226);
+color: rgb(234, 0, 0);</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QListWidget" name="treeWidget">
+      <property name="maximumSize">
+       <size>
+        <width>152</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListWidget{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(220, 207, 187, 255), stop:1 rgba(239, 239, 239, 255));
+
+}
+
+/* QListWidget::item :selected {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+	color: rgb(4, 4, 4);
+	border-color: rgb(0, 0, 0);
+ }*/
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>42</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <property name="movement">
+       <enum>QListView::Static</enum>
+      </property>
+      <property name="flow">
+       <enum>QListView::TopToBottom</enum>
+      </property>
+      <property name="isWrapping" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="resizeMode">
+       <enum>QListView::Adjust</enum>
+      </property>
+      <property name="layoutMode">
+       <enum>QListView::SinglePass</enum>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="selectionRectVisible">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Customers</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/User-icon.png</normaloff>:/new/prefix1/images/User-icon.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Loans</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/money.png</normaloff>:/new/prefix1/images/money.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vouchers</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/check.png</normaloff>:/new/prefix1/images/check.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Loan Ledger</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/liquid-ledger-demo.png</normaloff>:/new/prefix1/images/liquid-ledger-demo.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dealer Ledger</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/liquid-ledger-demo.png</normaloff>:/new/prefix1/images/liquid-ledger-demo.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guarantor Status</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-tasks.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-tasks.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pre-Payment Schedule</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/application-vnd.ms-excel.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/application-vnd.ms-excel.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Users</string>
+       </property>
+       <property name="icon">
+        <iconset resource="EasyFinance.qrc">
+         <normaloff>:/new/prefix1/images/login-page-icon.png</normaloff>:/new/prefix1/images/login-page-icon.png</iconset>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{
+	background-color: qlineargradient(spread:pad, x1:0.467, y1:1, x2:0.473, y2:0, stop:0 rgba(220, 207, 187, 255), stop:1 rgba(239, 239, 239, 255));
+  border-width: 2px;
+	
+	color: rgb(8, 8, 8);
+}
+QToolButton { /* all types of tool button */
+    /* border: 1px solid #8f8f91;*/
+     border-radius: 2px;
+	font: 75 8pt &quot;Segoe UI&quot;;
+    font:Bold;
+    /* background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                         stop: 0 #f6f7fa, stop: 1 #dadbde);*/
+ }
+
+ QToolButton[popupMode=&quot;1&quot;] { /* only for MenuButtonPopup */
+     padding-right: 20px; /* make way for the popup button */
+ }
+ QToolButton:hover {
+	
+	
+	
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.656, fx:0.517, fy:1, stop:0 rgba(1, 116, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.656, fx:0.517, fy:1, stop:0 rgba(0, 255, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+  border: 1px  solid #8f8f91;
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.964, fx:0.494273, fy:1, stop:0 rgba(0, 255, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+	/*border-color: rgb(0, 255, 213);*/
+	border-color: rgb(217, 217, 217);
+
+ }
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+	color: rgb(4, 4, 4);
+	border-color: rgb(0, 0, 0);
+ }
+
+ /* the subcontrols below are used only in the MenuButtonPopup mode */
+ /*QToolButton::menu-button {
+     border: 2px solid gray;
+     border-top-right-radius: 6px;
+     border-bottom-right-radius: 6px;
+     /* 16px width + 4px for border = 20px allocated above */
+    /* width: 16px;
+ }*/
+
+</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{
+	background-color: qlineargradient(spread:pad, x1:0.467, y1:1, x2:0.473, y2:0, stop:0 rgba(220, 207, 187, 255), stop:1 rgba(239, 239, 239, 255));
+  border-width: 2px;
+	
+	color: rgb(8, 8, 8);
+}
+QToolButton { /* all types of tool button */
+    /* border: 1px solid #8f8f91;*/
+     border-radius: 2px;
+	font: 75 8pt &quot;Segoe UI&quot;;
+    font:Bold;
+    /* background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                         stop: 0 #f6f7fa, stop: 1 #dadbde);*/
+ }
+
+ QToolButton[popupMode=&quot;1&quot;] { /* only for MenuButtonPopup */
+     padding-right: 20px; /* make way for the popup button */
+ }
+ QToolButton:hover {
+	
+	
+	
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.656, fx:0.517, fy:1, stop:0 rgba(1, 116, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.656, fx:0.517, fy:1, stop:0 rgba(0, 255, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+  border: 1px  solid #8f8f91;
+	background-color: qradialgradient(spread:pad, cx:0.488, cy:1, radius:0.964, fx:0.494273, fy:1, stop:0 rgba(0, 255, 255, 255), stop:0.846591 rgba(255, 255, 255, 0));
+	/*border-color: rgb(0, 255, 213);*/
+	border-color: rgb(217, 217, 217);
+
+ }
+ QToolButton:pressed {
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                       stop: 0 #dadbde, stop: 1 #f6f7fa);
+	color: rgb(4, 4, 4);
+	border-color: rgb(0, 0, 0);
+ }
+
+ /* the subcontrols below are used only in the MenuButtonPopup mode */
+ /*QToolButton::menu-button {
+     border: 2px solid gray;
+     border-top-right-radius: 6px;
+     border-bottom-right-radius: 6px;
+     /* 16px width + 4px for border = 20px allocated above */
+    /* width: 16px;
+ }*/
+
+</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::TopToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionAdd_Customer">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/categories/preferences-desktop-personal.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/categories/preferences-desktop-personal.png</iconset>
+   </property>
+   <property name="iconText">
+    <string>New 
+&amp;Customer</string>
+   </property>
+   <property name="toolTip">
+    <string>New Customer</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="actionAdd_Loan">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-document.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-document.png</iconset>
+   </property>
+   <property name="text">
+    <string>New &amp;Loan(ALT+L)</string>
+   </property>
+   <property name="iconText">
+    <string>New 
+&amp;Loan</string>
+   </property>
+   <property name="toolTip">
+    <string>New Loan</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+  <action name="actionLedger">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/application-vnd.ms-excel.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/application-vnd.ms-excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Ledger</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Ledger</string>
+   </property>
+   <property name="toolTip">
+    <string>Ledger</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+G</string>
+   </property>
+  </action>
+  <action name="actionLoan_Report">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/stock_print-setup.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/stock_print-setup.png</iconset>
+   </property>
+   <property name="text">
+    <string>Loan Report</string>
+   </property>
+   <property name="iconText">
+    <string>Loan
+Report</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+R</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/invest-applet.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/invest-applet.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Easy Finance</string>
+   </property>
+   <property name="iconText">
+    <string>About
+Easy Finance</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionEdit_Record">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/document-save-as.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Record(ALT+E)</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Edit
+Record</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="actionDelete_Record">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/editdelete.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/editdelete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Record(ALT+D)</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Delete
+Record</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+  <action name="actionNew_Voucher">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/edit-select-all.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/edit-select-all.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Voucher(ALT+V)</string>
+   </property>
+   <property name="iconText">
+    <string>New
+&amp;Voucher</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Alt+V</string>
+   </property>
+  </action>
+  <action name="actionPrintPreview">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/gtk-print-preview.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/gtk-print-preview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print Preview</string>
+   </property>
+   <property name="iconText">
+    <string>&amp;Print
+Preview</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/help.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="iconText">
+    <string>Help and
+Support</string>
+   </property>
+   <property name="toolTip">
+    <string>Help and Support</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="action_Customer">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/categories/preferences-desktop-personal.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/categories/preferences-desktop-personal.png</iconset>
+   </property>
+   <property name="text">
+    <string>New &amp;Customer</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="action_Loan">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-document.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/mimetypes/x-office-document.png</iconset>
+   </property>
+   <property name="text">
+    <string>New &amp;Loan</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+  <action name="action_Voucher">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/edit-select-all.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/edit-select-all.png</iconset>
+   </property>
+   <property name="text">
+    <string>New &amp;Voucher</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+V</string>
+   </property>
+  </action>
+  <action name="actionHelp_2">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/help.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+H</string>
+   </property>
+  </action>
+  <action name="actionAbout_Easy_Finance">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/invest-applet.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/apps/invest-applet.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Easy Finance</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/application-exit.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Q</string>
+   </property>
+  </action>
+  <action name="action_Edit_Record">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/document-save-as.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/document-save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Edit Record</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="action_Delete_Record">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/editdelete.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/editdelete.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Delete Record</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+  <action name="actionQuit_nApplication">
+   <property name="icon">
+    <iconset resource="EasyFinance.qrc">
+     <normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/application-exit.png</normaloff>:/new/prefix1/images/Mashup-4.2/Mashup/actions/application-exit.png</iconset>
+   </property>
+   <property name="iconText">
+    <string>Quit
+Easy Finance</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit Application</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionEmiTool">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/images/Cal.png</normaloff>:/new/prefix1/images/Cal.png</iconset>
+   </property>
+   <property name="text">
+    <string>E.M.I. Tool</string>
+   </property>
+   <property name="iconText">
+    <string>Tools and
+Accessories</string>
+   </property>
+  </action>
+  <action name="actionTotal_Interest_Earned">
+   <property name="text">
+    <string>Total Interest Earned</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="EasyFinance.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionAdd_Customer</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showCustomer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAdd_Loan</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showLoan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNew_Voucher</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showVoucher()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_Record</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MainWindow</sender>
+   <signal>destroyed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>crypt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>0</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPrintPreview</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filePrintPreview()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDelete_Record</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>recDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Activated()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>14</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onTableViewActivated(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>344</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refreshPenalty()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>894</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1082</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditLoanNo</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refreshLedger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>-11</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit_nApplication</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>539</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEditCustName</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refreshLoanNo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>455</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-7</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEmiTool</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showEmiTool()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>450</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showCustomer()</slot>
+  <slot>showLoan()</slot>
+  <slot>showAbout()</slot>
+  <slot>Activated()</slot>
+  <slot>showVoucher()</slot>
+  <slot>showEdit()</slot>
+  <slot>onTableViewClicked(QModelIndex)</slot>
+  <slot>crypt()</slot>
+  <slot>filePrintPreview()</slot>
+  <slot>recDelete()</slot>
+  <slot>onTableViewActivated(QModelIndex)</slot>
+  <slot>refreshPenalty()</slot>
+  <slot>refreshLedger()</slot>
+  <slot>refreshLoanNo()</slot>
+  <slot>showEmiTool()</slot>
+ </slots>
+</ui>
